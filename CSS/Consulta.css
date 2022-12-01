@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    color: black;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 10px;
+    width: auto;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(90deg, #0F044C, #141E61, #787A91, #EEEEEE);
+	background-size: 200% 200%;
+	animation: gradient 7s ease infinite;
+    height: 100px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+.btn-navbar{
+    border: 2px solid rgb(3, 20, 247);
+    background-color: white;
+    cursor: pointer;
+    font-size: 15pt;
+    border-radius: 20px;
+    width: 200px;
+    transition: .6s;
+}
+
+.btn-navbar:hover{
+    box-shadow: inset 0px 0px 10px rgb(3, 20, 247), 0px 0px 8px rgb(105, 105, 105);
+}
