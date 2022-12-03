@@ -17,6 +17,30 @@
             <a href="/HTML/Convenio.html"><button class="btn-navbar">Convênio médico</button></a>
         </nav>
     </header>
+    <main>
+        <div class="forms">
+            <div class="informacao">
+                <h1>Encaminhe uma solicitação para a sua consulta</h1>
+                <p>Preencha o formulário descrevendo os sintomas, importante ressaltar informações como:<br>>>Nome do paciente<br>>>Idade do paciente<br>>>Qual o sintoma<br>>>Possui alguma alergia a medicamentos? Quais?</p>
+                <div class="forms-txt">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input class="txtform" type="text"  name="name" placeholder="Insira o seu nome"><br>
+                        <input class="txtform" type="text" name="email" placeholder="e-mail " /><br>
+                        <textarea style="padding: 10px" cols="100" rows="10" name="message" placeholder="Insira os dados acima para facilitar a consulta, você vai receber por e-mail orientações do tratamento."></textarea><br>
+                        <input type="text" name="honeypot" style="display:none">
+                        <input type="hidden" name="accessKey" value="aaaaaaaa-bbbb-cccc-dddd-eeee6666kkkk">
+                        <input type="hidden" name="subject" value="Contact us from - example.com" />
+                        <input type="hidden" name="replyTo" value="@">
+                        <input type="hidden" name="redirectTo" value="home.html">
+                        <input class="btn-form" type="submit" value="Submit" />
+                    </form>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+    </main>
         
 
     <script src="darkmode.js"></script>
